@@ -7,6 +7,7 @@ body {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
   border: 1px solid red;
+  margin: 0;
   /* height: 100vh; */
 }
 
@@ -20,25 +21,33 @@ body {
   grid-column: span 2;
   grid-row: 1 / -1;
   border: 1px solid green;
-  
   display: grid;
   grid-template-rows: repeat(12, 1fr);
+  align-items: self-start;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  background-color: #06b6d4;
+  color: #fff
 }
 
 .logo {
-  grid-row: span 1;
+  grid-row: span 2;
   font-size: 2rem;
-  /* display: grid; */
-  /* grid-template-columns: 1fr 6fr; */
+  font-weight: 600;
 }
+
+/* .logo span {
+  font-weight: 600;
+} */
 .sidebar-menu {
   grid-row: 3/ span 6;
   display: grid;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
 }
-.menu-item {
-  grid-row: span 1;
+.menu-item, .settings-item {
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
 }
 
 .settings {
